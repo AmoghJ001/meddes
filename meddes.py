@@ -1,8 +1,8 @@
 
-import tensorflow-cpu as tf
+import tensorflow as tf
 import keras 
 import streamlit as st
-from tf.keras.models import load_model
+from tensorflow.keras.models import load_model
 import SessionState
 import streamlit as st
 import pandas as pd
