@@ -1,5 +1,5 @@
 
-import tensorflow as tf
+import tensorflow-cpu as tf
 import keras 
 import streamlit as st
 from tf.keras.models import load_model
