@@ -11,10 +11,6 @@ from PIL import Image, ImageOps
 import numpy as np
 import pandas as pd
 import base64
-import malmodelnew.hdf5
-import covidmodel.hdf5
-import pneumodel.hdf5
-import btmodel90.hdf5
 meddes=Image.open('meddes.PNG')
 st.set_page_config(page_title='MedDES', page_icon = meddes, initial_sidebar_state = 'auto')
 st.sidebar.title('Navigation')
@@ -67,7 +63,7 @@ elif radio == "Patient Biodata":
     session_state.symptoms = st.text_input("Any symptoms: ", value=session_state.symptoms)
 
 elif radio == "Malaria Test":
-    model = load_model('malmodelnew.hdf5')
+    model = load_model('\malmodelnew.hdf5')
     st.write("""
                  # Malaria Diagnostic Test
                  """
