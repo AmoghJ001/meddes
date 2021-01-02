@@ -63,7 +63,7 @@ elif radio == "Patient Biodata":
     session_state.symptoms = st.text_input("Any symptoms: ", value=session_state.symptoms)
 
 elif radio == "Malaria Test":
-    model = load_model('\malmodelnew.hdf5')
+    model = load_model('/app/malmodelnew.hdf5')
     st.write("""
                  # Malaria Diagnostic Test
                  """
@@ -101,7 +101,7 @@ elif radio == "Malaria Test":
             #st.text("Diagnostic probability:" + prob)
             session_state.mal = "Malaria Infected"
 elif radio == "COVID-19 Test":
-    model = load_model('covidmodel.hdf5')
+    model = load_model('/app/covidmodel.hdf5')
     st.write("""
                  # COVID-19 Diagnostic Test
                  """
@@ -147,7 +147,7 @@ elif radio == "COVID-19 Test":
             #st.text("Diagnostic probability:" + prob)
             session_state.covid = "COVID Positive"
 elif radio == "Pneumonia Test":
-    model = load_model('pneumodel.hdf5')
+    model = load_model('/app/pneumodel.hdf5')
     st.write("""
                  # Pneumonia Diagnostic Test
                  """
@@ -186,7 +186,7 @@ elif radio == "Pneumonia Test":
             session_state.pneu = "Pneumonia"
 
 elif radio == "Brain Tumour Test":
-    model = load_model('btmodel90.hdf5')
+    model = load_model('/app/btmodel90.hdf5')
     st.write("""
                  # Brain Tumour Diagnostic Test
                  """
